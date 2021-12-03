@@ -1,0 +1,16 @@
+{
+  "name": "day_3",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "~4.5.2",
+    "@types/node": "~16.11.11"
+  },
+  "type": "module",
+  "main": "src/Day3.ts",
+  "private": true,
+  "scripts": {
+    "start": "tsc && node src/Day3.js",
+    "build": "tsc"
+  }
+}
