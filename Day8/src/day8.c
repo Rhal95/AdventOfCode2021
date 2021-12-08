@@ -136,26 +136,16 @@ int main(int argc, char** argv){
     int oneFourSevenEight = 0;
     int sumOfOutput = 0;
 
-    int digits[10] = {0,0,0,0,0,0,0,0,0,0};
-
     while(r != NULL){
         struct puzzle puzzle = convertToPuzzle(buf);
         struct puzzleSolution solution = solve(puzzle);
 
         oneFourSevenEight += solution.oneFourSevenEight;
         sumOfOutput += solution.output;
-        printf("%04d\n",solution.output);
-
-        while(solution.output){
-            digits[solution.output % 10]++;
-            solution.output /= 10;
-        }
 
         memset(buf, 0, bufflen);
         r = fgets(buf, bufflen, fp);
     }
-    for(int i = 0; i < 10; i++){
-        printf("%d ", digits[i]);
-    }
+
     printf("\nCount 1478: %d\nSum: %d\n", oneFourSevenEight, sumOfOutput);
 }
