@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Day11" />
         <module name="Day12" />
+        <module name="Day13" />
         <module name="Day1" />
         <module name="Day2" />
         <module name="Day4" />
@@ -19,6 +20,7 @@
       <module name="Day1" target="17" />
       <module name="Day11" target="17" />
       <module name="Day12" target="17" />
+      <module name="Day13" target="17" />
       <module name="Day2" target="17" />
       <module name="Day4" target="17" />
       <module name="Day7" target="17" />
